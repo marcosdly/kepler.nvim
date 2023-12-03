@@ -1,0 +1,25 @@
+{
+  "neodev": {
+    "library": {
+      "enabled": true,
+      "plugins": ["nvim-lspconfig", "lsp", "lazy.nvim"]
+    }
+  },
+  "neoconf": {
+    "plugins": {
+      "lua_ls": {
+        "enabled": true
+      }
+    }
+  },
+  "lspconfig": {
+    "lua_ls": {
+      "Lua.format.enable": false, // use stylua formatter
+      "Lua.completion.callSnippet": "Both",
+      "Lua.workspace.checkThirdParty": false
+    },
+    "jsonls": {
+      "json.format.enable": false // use prettier formatter
+    }
+  }
+}
